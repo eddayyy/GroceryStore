@@ -12,12 +12,56 @@
 ## Table of Contents
 
 1. [Overview](#-overview)
-2. [License](#-license)
+2. [Features and Demo](#features-and-demo)
+3. [License](#-license)
 
 ## 🌟 Overview
 
-This C++ project creates the functionality a user at a Grocery Store would experience. Such as adding things into their cart, pricing of items, unique UPC codes for each item, product names, and much more! Object oriented principles such as polymorphism, abstraction, and encapsulation were used in the creation and design of this system.
+**Grocery Store** is a C++ project that simulates the functionality a user would experience at a grocery store. This includes adding items to their cart, pricing items, assigning unique UPC codes for each item, product names, and more. The system is designed using object-oriented principles such as polymorphism, abstraction, and encapsulation.
+
+## **Features and Demo**
+
+### Feature 1: Adding Items to Cart
+
+- **Description**: Users can add items to their cart, each with a unique UPC code, product name, brand name, and price.
+
+  - **Code Example**:
+    ```cpp
+    GroceryList myList;
+    myList.insert(GroceryItem("milk", "Brand A", "000000000001", 2.99), GroceryList::Position::TOP);
+    myList.insert(GroceryItem("bread", "Brand B", "000000000002", 1.99), GroceryList::Position::BOTTOM);
+    ```
+
+### Feature 2: Pricing of Items
+
+- **Description**: Each item in the grocery store has a price, and users can view the total price of the items in their cart.
+
+  - **Code Example**:
+    ```cpp
+    double totalPrice = myList.calculateTotalPrice();
+    std::cout << "Total Price: $" << totalPrice << std::endl;
+    ```
+
+### Feature 3: Unique UPC Codes
+
+- **Description**: Each item is assigned a unique UPC code for identification.
+
+  - **Code Example**:
+    ```cpp
+    GroceryItem item("eggs", "Brand C", "000000000003", 3.49);
+    std::cout << "UPC Code: " << item.upcCode() << std::endl;
+    ```
+
+### Feature 4: Viewing and Modifying Cart
+
+- **Description**: Users can view the items in their cart, remove items, and modify the cart as needed.
+
+  - **Code Example**:
+    ```cpp
+    myList.remove(GroceryItem("bread", "Brand B", "000000000002", 1.99));
+    std::cout << "Updated Cart: " << myList << std::endl;
+    ```
 
 ## 📄 License
 
-This project is licensed under the MIT License - see [LICENSE.md](LICENSE.md) for details.
+This project is licensed under the GNU General Public License v3 - see [LICENSE.md](LICENSE.md) for details.

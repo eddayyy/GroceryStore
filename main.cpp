@@ -105,18 +105,6 @@ int main()
   try
   {
     basicScenario();
-
-
-    ///////////////////////// TO-DO (1) //////////////////////////////
-    /// Create, manipulate, and display your own GroceryList object here.  Not looking for anything specific but don't just repeat
-    /// what I've already done above.  Be imaginative and create your own story.  Maybe you're restocking a depleted food bank, or
-    /// preparing for a holiday meal, or catering a banquette, or planning an all night study session, or ...  You *must* use all
-    /// the functions of the GroceryList interface, including the insertion, extraction, and relational operators.  Try inserting
-    /// grocery items from both the top and the bottom of the lists using the enumerated position values TOP and BOTTOM as well as
-    /// indexed offsets.  Remove grocery items from the top, middle, and bottom.  Create, concatenate, rearrange, and compare
-    /// several (more than two) lists. Have some fun with it!  The purpose is to show me you, as a GroceryList class consumer
-    /// (i.e., the client) understand how to *use* the GroceryList.
-    /////////////////////// END-TO-DO (1) ////////////////////////////
   }
 
   catch( const std::exception & ex )
